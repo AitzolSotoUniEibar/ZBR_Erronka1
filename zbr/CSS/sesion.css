@@ -1,0 +1,57 @@
+.logo{
+    width: 20%;
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.25em;
+    box-shadow: 5px 2.5px 10px black;
+    padding: 1em;
+}
+
+.izena{
+    display: flex;
+    justify-content: center;
+    color: rgb(112, 255, 255);
+}
+
+.izena h2{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.sesion-form{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.sesion-input{
+    height: 35px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    border: none;
+    border-bottom: 1px solid rgb(112, 255, 255);
+    border-radius: 0.25em;
+}
+
+.sesion-btn{
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.75em;
+    width: 60%;
+    background-color: rgb(112, 255, 255);
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sesion-btn:hover {
+    background-color: rgb(0, 200, 200); /* Cambia el color del fondo al hacer hover */
+    transform: scale(1.1); /* Aumenta el tamaño del botón al 110% */
+}
