@@ -18,17 +18,10 @@
                         $_SESSION['erabiltzaile_izena'] = $erabiltzailea->getErabiltzaileIzena();
                         $_SESSION['izena'] = $erabiltzailea->getIzena();
                         $_SESSION['abizena'] = $erabiltzailea->getAbizena();
+                        $_SESSION['rol'] = $erabiltzailea->getRol();
                         header("Location: home"); 
                         exit;
-                    } else {
-                        // Contraseña incorrecta
-                        echo "Contraseña incorrecta";
-                        $_SESSION['error'] = "Contraseña incorrecta.";
                     }
-                } else {
-                    // El email no está registrado
-                    echo "Usuario no existe";
-                    $_SESSION['error'] = "El usuario no existe.";
                 }
             }
     

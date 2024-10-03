@@ -12,31 +12,35 @@
     <meta charset="utf8">
 </head>
 
-<header class="p-3">
+<header class="p-2">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-            </a>
+            <img src="img/logo_zbr.png" alt="" class="logo">
 
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 link">Home</a></li>
+                <li><a href="home" class="nav-link px-2 link">Home</a></li>
                 <li><a href="./historia.php" class="nav-link px-2 link">Historia</a></li>
                 <li><a href="./tienda.php" class="nav-link px-2 link">Tienda</a></li>
                 <li><a href="./informacion.php" class="nav-link px-2 link">Información</a></li>
             </ul>
 
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                <input type="search" class="form-control form-control-dark text-bg-white" placeholder="Bilatu..." aria-label="Search">
-            </form>
 
             <div class="text-end">
-                <?php if (isset($_SESSION['erabiltzaile_izena'])):?>
-                    <span class="text-light">Ongi etorri, <?php echo htmlspecialchars($_SESSION['izena']); ?> <?php echo htmlspecialchars($_SESSION['abizena']); ?></span>
-                    <a href="logout" class="btn btn-outline-light">Logout</a>
-                <?php else: // Si no hay sesión ?>
-                    <a href="login" class="btn btn-outline-light">Login</a>
-                    <a href="erregistratu" class="btn btn-warning me-2">Erregistratu</a>
+                <?php if (isset($_SESSION['erabiltzaile_izena'])): ?>
+                    <div class="dropdown">
+                        <img src="img/profila.png" class="profilIrudia">
+                        <a class="dropdown-toggle text-light" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <?php echo htmlspecialchars($_SESSION['izena']); ?> <?php echo htmlspecialchars($_SESSION['abizena']); ?>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="profila">Nire profila</a></li>
+                            <li><a class="dropdown-item" href="logout">Saioa itxi</a></li>
+                        </ul>
+                    </div>
+                <?php else:  ?>
+                    <a href="login" class="btn login-btn">Login</a>
+                    <a href="erregistratu" class="btn erregistratu-btn">Erregistratu</a>
                 <?php endif; ?>
             </div>
         </div>

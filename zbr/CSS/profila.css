@@ -1,0 +1,32 @@
+.table-container {
+    width: 98%;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid black;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.eskaerak{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+}
+
+.edit{
+    width: 60%;
+}
+
+td.action {
+    width: 1%;
+    white-space: nowrap;
+    text-align: center;
+}

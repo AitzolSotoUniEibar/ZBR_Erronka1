@@ -9,9 +9,9 @@
 </head>
 <body>
     <div class="container">
-    <div class="izena">
-            <img src="img/logo_zbr.png" alt="" class="logo">
-            <h2>ZBR</h2>
+        <div class="izena">
+                <img src="img/logo_zbr.png" alt="" class="logo">
+                <h2>ZBR</h2>
         </div>
         <form action="erregistratu" method="post">
             <div class="sesion-form">

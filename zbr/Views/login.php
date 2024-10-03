@@ -16,14 +16,15 @@
         </div>
         <form action="login" method="post">
             <div class="sesion-form">
-
                 <input type="text" id="erabiltzaile_izena" name="erabiltzaile_izena" placeholder="Erabiltzailea" class="sesion-input" required>
-    
                 <input type="password" id="pasahitza" name="pasahitza" placeholder="Pasahitza" class="sesion-input" required>
-    
                 <input type="submit" value="Login" class="sesion-btn">
             </div>
         </form>
+        <div class="register-link">
+            <p>Ez duzu konturik?<a href="erregistratu">Sortu hemen</a></p>
+        </div>
+
     </div>
 </body>
 </html>
