@@ -21,8 +21,8 @@
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="home" class="nav-link px-2 link">Home</a></li>
                 <li><a href="./historia.php" class="nav-link px-2 link">Historia</a></li>
-                <li><a href="./tienda.php" class="nav-link px-2 link">Tienda</a></li>
-                <li><a href="./informacion.php" class="nav-link px-2 link">Información</a></li>
+                <li><a href="./denda.php" class="nav-link px-2 link">Denda</a></li>
+                <li><a href="./informazioa.php" class="nav-link px-2 link">Informazioa</a></li>
             </ul>
 
 

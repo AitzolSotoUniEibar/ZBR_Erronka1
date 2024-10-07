@@ -12,14 +12,14 @@
                 <img src="..\ZBR\img\bolis.png" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
             </div>
             <div class="col-lg-6">
-                <h4 class="display-6 fw-bold text-body-emphasis lh-1 mb-1">"La escritura es el eco del alma, donde cada palabra es un susurro eterno en el papel."</h4><br>
-                <p class="lead">¡Bienvenido a **ZBR**, tu tienda especializada en bolígrafos y artículos de escritura!
+                <h4 class="display-6 fw-bold text-body-emphasis lh-1 mb-1">"Idazkera arimaren oihartzuna da, non hitz bakoitza betiko xuxurla baita paperean."</h4><br>
+                <p class="lead">Ongi etorri** ZBR** ra, boligrafoetan eta idazketa-artikuluetan espezializatutako zure dendara!
 
-                    Desde nuestros inicios, hemos creído en el poder de la palabra escrita. Un buen bolígrafo no solo es una herramienta, sino una extensión de las ideas, la creatividad y la precisión que cada persona puede plasmar en el papel.
-                    Ya seas estudiante, profesional o simplemente un amante de la escritura, en **ZBR** encontrarás el bolígrafo perfecto para cada ocasión. ¡Nos alegra que nos acompañes en este viaje de ideas y tinta!
+                Hasieratik, hitz idatziaren boterean sinetsi dugu. Boligrafo on bat ez da tresna bat bakarrik, baizik eta pertsona bakoitzak paperean islatu ditzakeen ideien, sormenaren eta zehaztasunaren hedadura bat.
+                Ikaslea, profesionala edo, besterik gabe, idazketa-zalea bazara,** ZBR** n boligrafo perfektua aurkituko duzu aldi bakoitzerako. Pozten gaitu ideia eta tinta bidaia honetan gurekin egoteak!
                 </p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-secondary">Productos</button>
+                    <button type="button" class="btn btn-secondary">Produktuak</button>
                     <button type="button" class="btn btn-secondary">Historia</button>
                 </div>
             </div>
@@ -27,13 +27,13 @@
     </div>
 
     <div class="container px-4 py-5">
-        <h2 class="pb-2 border-bottom">¿Por qué nosotros?</h2>
+        <h2 class="pb-2 border-bottom">Zergatik gu?</h2>
 
         <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
             <div class="col d-flex flex-column align-items-start gap-2">
-                <h2 class="fw-bold text-body-emphasis"><-ZBR-> lideres en cuidar lo nuestro</h2>
-                <p class="text-body-secondary">En ZBR, priorizamos la integridad, la calidad y la satisfacción del cliente, lo que nos ha establecido como un nombre de confianza en la industria. Nuestro compromiso con la excelencia se refleja en cada aspecto de nuestro negocio.</p>
-                <button type="button" class="btn btn-secondary btn-lg px-4">Saber más</button>
+                <h2 class="fw-bold text-body-emphasis">Gurea zaintzeko liderrak<-ZBR-></h2>
+                <p class="text-body-secondary">ZBRn, bezeroaren osotasuna, kalitatea eta gogobetetasuna lehenesten ditugu, eta horrek industrian konfiantzazko izen gisa ezarri gaitu. Bikaintasunarekin dugun konpromisoa gure negozioaren alderdi guztietan islatzen da.</p>
+                <button type="button" class="btn btn-secondary btn-lg px-4">Gehiago jakin</button>
             </div>
 
             <div class="col">
@@ -44,8 +44,8 @@
                             <use xlink:href="#collection"></use>
                         </svg>
                     </div>
-                    <h4 class="fw-semibold mb-0 text-body-emphasis">Calidad inigualable</h4>
-                    <p class="text-body-secondary">Nuestros bolígrafos están elaborados con materiales de alta calidad, asegurando una escritura suave y precisa en todo momento.</p>
+                    <h4 class="fw-semibold mb-0 text-body-emphasis">Kalitate paregabea</h4>
+                    <p class="text-body-secondary">Gure boligrafoak kalitate handiko materialez eginak daude, une oro idazkera leun eta zehatza ziurtatuz.</p>
                 </div>
 
                 <div class="col d-flex flex-column gap-2">
@@ -55,7 +55,7 @@
                         </svg>
                     </div>
                     <h4 class="fw-semibold mb-0 text-body-emphasis">Ergonomia</h4>
-                    <p class="text-body-secondary">Nuestros bolígrafos destacan por su diseño moderno y ergonómico, que garantiza una experiencia de escritura fluida y cómoda.</p>
+                    <p class="text-body-secondary">Gure boligrafoak diseinu moderno eta ergonomikoagatik nabarmentzen dira, idazkera arin eta erosoaren esperientzia bermatzen baitu.</p>
                 </div>
 
                 <div class="col d-flex flex-column gap-2">
@@ -64,8 +64,8 @@
                             <use xlink:href="#speedometer"></use>
                         </svg>
                     </div>
-                    <h4 class="fw-semibold mb-0 text-body-emphasis">Compromiso</h4>
-                    <p class="text-body-secondary">Brindamos un servicio personalizado, escuchando y adaptándonos a las necesidades de nuestros clientes para garantizar su satisfacción.</p>
+                    <h4 class="fw-semibold mb-0 text-body-emphasis">Konpromezua</h4>
+                    <p class="text-body-secondary">Zerbitzu pertsonalizatua eskaintzen dugu, gure bezeroen beharrei entzunez eta haien gogobetetasuna bermatzeko egokituz.</p>
                 </div>
 
                 <div class="col d-flex flex-column gap-2">
@@ -74,8 +74,8 @@
                             <use xlink:href="#table"></use>
                         </svg>
                     </div>
-                    <h4 class="fw-semibold mb-0 text-body-emphasis">Responsabilidad</h4>
-                    <p class="text-body-secondary">Nos comprometemos con el medio ambiente al utilizar proveedores ecológicos y empaques sostenibles, combinando calidad con responsabilidad ambiental.</p>
+                    <h4 class="fw-semibold mb-0 text-body-emphasis"> Erantzukizuna</h4>
+                    <p class="text-body-secondary">Ingurumenarekin konprometitzen gara hornitzaile ekologiko eta enpate jasangarriak erabiltzean, kalitatea ingurumen-erantzukizunarekin konbinatuz.</p>
                 </div>
                 </div>
             </div>
