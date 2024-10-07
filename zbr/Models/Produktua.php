@@ -38,6 +38,7 @@
         }
 
         //DB
+        /**Produktu bat ID bidez bilatzeko funtzioa */
         public function getProduktuaById($produktuaId) {
             global $pdo;
     
@@ -52,6 +53,7 @@
             return null;
         }
 
+        /**Produktu guztiak kontsultatzeko funtzioa*/
         public function getProduktuGuztiak(){
             global $pdo;
 
@@ -74,6 +76,7 @@
             }
         }
 
+        /**Produktua ezabatzeko funtzioa*/
         public function deleteProduktua($id) {
             global $pdo;
             
@@ -83,6 +86,7 @@
             return $stmt->execute();
         }
 
+        /**Produktu baten informazioa eguneratzeko funtzioa */
         public function produktuaEguneratu($id,$produktua){
             global $pdo;
 

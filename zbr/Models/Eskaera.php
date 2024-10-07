@@ -57,19 +57,18 @@
         }
 
         //DB
+        /**Erabiltzaile baten eskaerak datu basean kontsultatzeko */
         public function getEskaerak($userID){
-            // Asegúrate de que $pdo es tu instancia de PDO
             global $pdo;
 
             $userID = htmlspecialchars($userID);
             
-            // Preparar y ejecutar la consulta
-            $stmt = $pdo->prepare("SELECT * FROM eskaerak WHERE bezero_id = :id");
+            $stmt = $pdo->prepare("SELECT * FROM eskaerak WHERE bezero_id = :id");//Eskaerak bilatu bezeroaren id erabiliz
             $stmt->bindParam(':id', $userID);
             $stmt->execute();
 
             $eskaerak = [];
-            if ($stmt->rowCount() > 0) {
+            if ($stmt->rowCount() > 0) {//Aurkitutako eskaera guztiak gorde
                 while ($data = $stmt->fetch(PDO::FETCH_ASSOC)) {
                     $eskaera = new Eskaera(
                         $data['id'], 
@@ -82,7 +81,7 @@
                     $eskaerak[] = $eskaera;
                 }
                 return $eskaerak;
-            } else {
+            } else {//Ez badu eskaerarik hutsik bueltatuko da
                 return null;
             }
         }

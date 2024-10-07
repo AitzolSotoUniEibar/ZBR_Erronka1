@@ -1,4 +1,5 @@
 <?php
+    /**Datu basera konektatzeko fitxategia */
     $host = 'localhost';
     $db   = 'zbr';
     $user = 'root';

@@ -1,8 +1,8 @@
 <?php
 
 class HomeController {
-    public function index() {
-        include 'Views/home.php'; // Asegúrate de tener esta vista
+    public function index() {//Home orria bistaratzeko
+        include 'Views/home.php';
     }
 }
 ?>

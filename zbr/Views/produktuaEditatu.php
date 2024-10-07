@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/editatu.css">
 </head>
+<!--Produktu bat editatzeko formularioa-->
 <body>
     <div class="editatu-container">
         <h1>Produktua</h1>

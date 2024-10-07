@@ -13,6 +13,7 @@
                 <img src="img/logo_zbr.png" alt="" class="logo">
                 <h2>ZBR</h2>
         </div>
+        <!--Erabiltzaile berri bat sortzeko formularioa-->
         <form action="erregistratu" method="post">
             <div class="sesion-form">
                 <input type="text" id="izena" name="izena" placeholder="Izena" class="sesion-input" required>

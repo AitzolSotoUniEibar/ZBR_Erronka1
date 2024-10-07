@@ -9,7 +9,7 @@ require 'controllers/ProfilaController.php';
 session_start();
 
 $url = str_replace('/zbr', '', $_SERVER['REQUEST_URI']);
-
+/**URL-ak kudeatzeko fitxategia*/
 //Rutak ezarri
 switch ($url) {
     case '/login':
@@ -33,14 +33,12 @@ switch ($url) {
         $controller->profila();
         break;
     case (strpos($url, '/ezabatuProduktua') !== false):
-        // Si la URL contiene 'ezabatuProduktua', obtenemos el ID desde la query string
         if (isset($_GET['id'])) {
             $controller = new ProfilaController();
             $controller->ezabatuProduktua($_GET['id']);
         }
         break;
     case (strpos($url, '/ezabatuErabiltzailea') !== false):
-        // Si la URL contiene 'ezabatuProduktua', obtenemos el ID desde la query string
         if (isset($_GET['id'])) {
             $controller = new ProfilaController();
             $controller->ezabatuErabiltzailea($_GET['id']);

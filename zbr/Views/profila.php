@@ -7,19 +7,21 @@
     <title>ZBR</title>
     <link rel="stylesheet" href="CSS/profila.css">
 </head>
-
+<!--Erabiltzailearen profila-->
 <body>
     <div class="eskaerak">
         <?php
-        // Verifica si la sesión de usuario tiene el rol definido
+        
         if (isset($_SESSION['rol'])) {
-            // Si el rol es "admin"
-            if ($_SESSION['rol'] == 'admin') {
+            if ($_SESSION['rol'] == 'admin') {/**Erabiltzailea admin baldin bada erabiltzaile eta produktu guztiak bistaratuko dira*/
                 echo "<h2>Administratzailea</h2>";
 
                 if (!empty($erabiltzaileak)) {
-                    echo "<h3>Erabiltzaileak</h3>";
-                    echo "<div class='table-container'>";
+                    echo "<div class='erakutsiBotoia'>";
+                        echo "<h3>Erabiltzaileak</h3>";
+                        echo "<button id='erabiltzaileakBotoia'>Erabiltzaileak ikusi</button>";
+                    echo "</div>";
+                    echo "<div id='erabiltzaileakDiv' class='table-container erakutsiDiv'>";
                     echo "<table>
                             <thead>
                                 <tr>
@@ -35,7 +37,7 @@
                             </thead>
                             <tbody>";
                     
-                    foreach ($erabiltzaileak as $erabiltzaile) {
+                    foreach ($erabiltzaileak as $erabiltzaile) {/**Erabiltzaileak */
                         echo "<tr>
                                 <td>" . $erabiltzaile->getId() . "</td>
                                 <td>" . $erabiltzaile->getIzena() . "</td>
@@ -56,8 +58,11 @@
                 }
 
                 if (!empty($produktuak)) {
-                    echo "<h3 class='mt-3'>Produktuak</h3>";
-                    echo "<div class='table-container'>";
+                    echo "<div class='erakutsiBotoia'>";
+                        echo "<h3>Produktuak</h3>";
+                        echo "<button id='produktuakBotoia'>Produktuak ikusi</button>";
+                    echo "</div>";
+                    echo "<div id='produktuakDiv' class='table-container erakutsiDiv'>";
                     echo "<table>
                             <thead>
                                 <tr>
@@ -70,7 +75,7 @@
                             </thead>
                             <tbody>";
                     
-                    foreach ($produktuak as $produktua) {
+                    foreach ($produktuak as $produktua) {/**Produktuak */
                         echo "<tr>
                                 <td>" . $produktua->getId() . "</td>
                                 <td>" . $produktua->getIzena() . "</td>
@@ -87,8 +92,8 @@
                     echo "<p>Ez dago eskaerarik.</p>";
                 }
             }
-            // Si el rol es "bezero"
-            elseif ($_SESSION['rol'] == 'bezero') {
+            
+            elseif ($_SESSION['rol'] == 'bezero') {/**Erabiltzailea bezero bat baldin bada bere eskaerak bistaratuko dira */
                 echo "<h1>Kaixo " . $_SESSION['izena'] . "!</h1>";
 
                 if (!empty($eskaerak)) {
@@ -105,7 +110,7 @@
                             <tbody>";
                     
                     $produktuaModel = new Produktua();
-                    foreach ($eskaerak as $eskaera) {
+                    foreach ($eskaerak as $eskaera) {/**Eskaeren informazioa*/
                         $produktua = $produktuaModel->getProduktuaById($eskaera->getProduktuaId());
                         echo "<tr>
                                 <td>" . htmlspecialchars($eskaera->getId()) . "</td>
@@ -124,5 +129,23 @@
         }
         ?>
     </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#erabiltzaileakBotoia").click(function() {
+                console.log("hola");
+                $("#erabiltzaileakDiv").slideToggle("slow");  //Erabiltzaileen div-a erakutsi eta ezkutatu
+                var botoiaTxt = $("#erabiltzaileakDiv").is(":visible") ? "Erabiltzaileak ezkutatu" : "Erabiltzaileak ikusi";//Botoiaren testua aldatzeko
+                $(this).text(botoiaTxt);  
+            });
+
+            $("#produktuakBotoia").click(function() {
+                console.log("hola");
+                $("#produktuakDiv").slideToggle("slow");  //Erabiltzaileen div-a erakutsi eta ezkutatu
+                var botoiaTxt = $("#produktuakDiv").is(":visible") ? "Produktuak ezkutatu" : "Produktuak ikusi";//Botoiaren testua aldatzeko
+                $(this).text(botoiaTxt);  
+            });
+        });
+    </script>
 </body>
 </html>

@@ -7,7 +7,7 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/sesion.css">
 </head>
-
+<!--Login egiteko formularioa-->
 <body>
     <div class="container">
         <div class="izena">

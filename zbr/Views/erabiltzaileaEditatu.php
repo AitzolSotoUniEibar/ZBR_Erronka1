@@ -9,7 +9,7 @@
 <body>
     <div class="editatu-container">
         <h1>Erabiltzailea</h1>
-        <form action="eguneratuErabiltzailea?id=<?php echo $erabiltzailea->getId(); ?>" method="POST">
+        <form action="eguneratuErabiltzailea?id=<?php echo $erabiltzailea->getId(); ?>" method="POST"><!--Erabiltzailea eguneratzeko formularioa-->
             <div class="editatu-form">
                 <label for="id">ID:</label>
                 <input type="text" value='<?php echo $erabiltzailea->getId(); ?>' class="editatu-input" readonly>

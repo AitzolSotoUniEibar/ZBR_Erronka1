@@ -69,36 +69,34 @@
         }
 
         //DB
+        /**Erabiltzaile berri bat datu basean gordetzeko funtzioa */
         public function gorde(){
             global $pdo;
             $stmt = $pdo->prepare("INSERT INTO erabiltzaileak (izena, abizena, rol ,erabiltzaile_izena, pasahitza) VALUES (?, ?, ?, ?, ?)");
             $stmt->execute([$this->izena, $this->abizena, $this->rol, $this->erabiltzaile_izena, $this->pasahitza]);
         }
 
-        
+        /**Erabiltzaile bat bilatzeko funtzioa izenaren bidez */
         public static function findErabiltzailea($erabiltzaile_izena) {
-            // Asegúrate de que $pdo es tu instancia de PDO
             global $pdo;
 
             $erabiltzaile_izena = htmlspecialchars($erabiltzaile_izena);
 
-            // Preparar y ejecutar la consulta
             $stmt = $pdo->prepare("SELECT * FROM erabiltzaileak WHERE erabiltzaile_izena = :erabiltzailea");
             $stmt->bindParam(':erabiltzailea', $erabiltzaile_izena);
             $stmt->execute();
 
-            // Verificar si se encontró un usuario
             if ($stmt->rowCount() > 0) {
-                // Retornar el primer usuario encontrado
                 $data = $stmt->fetch(PDO::FETCH_ASSOC);
                 $erabiltzailea = new Erabiltzailea($data['izena'], $data['abizena'], $data['rol'],$data['erabiltzaile_izena'], $data['pasahitza']);
-                $erabiltzailea->id = $data['id']; // Asigna el ID del usuario
+                $erabiltzailea->id = $data['id'];
                 return $erabiltzailea;
             } else {
-                return null; // No se encontró ningún usuario
+                return null;
             }
         }
 
+        /**Erabiltzaile guztiak datu basetik hartzeko */
         public static function getErabiltzaileGuztiak(){
             global $pdo;
 
@@ -124,6 +122,7 @@
             }
         }
 
+        /**Erabiltzaile bat ezabatzeko funtzioa */
         public function deleteErabiltzailea($id) {
             global $pdo;
             
@@ -133,6 +132,7 @@
             return $stmt->execute();
         }
 
+        /**Erabiltzaile bat ID bidez bilatzeko funtzioa */
         public function getErabiltzaileaById($erabiltzaileaId) {
             global $pdo;
     
@@ -149,6 +149,7 @@
             return null;
         }
 
+        /**Erabiltzaile baten informazioa eguneratzeko funtzioa */
         public function erabiltzaileaEguneratu($id,$erabiltzailea){
             global $pdo;
 

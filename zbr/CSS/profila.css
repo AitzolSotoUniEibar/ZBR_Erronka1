@@ -30,3 +30,29 @@ td.action {
     white-space: nowrap;
     text-align: center;
 }
+
+.erakutsiBotoia{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+
+.erakutsiBotoia button{
+    background-color: rgb(144, 248, 248);
+    margin-left: 1em;
+    border-radius: 0.25em;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-right: 0.5em;
+}
+
+.erakutsiBotoia button:hover{
+    background-color: rgb(41, 206, 218);
+    margin-left: 1em;
+    transform: scale(1.05); /* Aumenta el tamaño del botón al 110% */
+    box-shadow: 5px 2.5px 10px black;
+}
+
+.erakutsiDiv{
+    margin-bottom: 1em;
+}
