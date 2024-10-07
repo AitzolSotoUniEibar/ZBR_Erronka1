@@ -1,0 +1,30 @@
+.editatu-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+}
+
+.editatu-form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.editatu-input{
+    height: 35px;
+    margin-bottom: 1em;
+}
+
+.editatu-btn{
+    margin-top: 1em;
+    padding: 0.5em;
+    width: 40%;
+    background-color: rgb(112, 255, 255);
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.editatu-btn:hover {
+    background-color: rgb(0, 200, 200); /* Cambia el color del fondo al hacer hover */
+    transform: scale(1.1); /* Aumenta el tamaño del botón al 110% */
+}

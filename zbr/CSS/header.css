@@ -1,0 +1,45 @@
+header{
+    background-color: rgb(144, 248, 248);
+}
+
+.link{
+    color: white;
+}
+
+.link:hover{
+    color: rgb(255, 221, 28);
+}
+
+.profilIrudia{
+    width: 10%;
+}
+
+.logo{
+    width: 5%;
+}
+
+.login-btn{
+    background-color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-right: 0.5em;
+}
+
+.login-btn:hover{
+    background-color: rgb(255, 221, 28);
+    transform: scale(1.1); /* Aumenta el tamaño del botón al 110% */
+    box-shadow: 5px 2.5px 10px black;
+}
+
+.erregistratu-btn{
+    background-color: rgb(24, 20, 0);
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-right: 0.5em;
+}
+
+.erregistratu-btn:hover{
+    background-color: rgb(255, 221, 28);
+    color: white;
+    transform: scale(1.1); /* Aumenta el tamaño del botón al 110% */
+    box-shadow: 5px 2.5px 10px black;
+}
